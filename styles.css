@@ -1,0 +1,330 @@
+
+
+/*remove all dashed borders*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    color: white;
+
+}
+
+#one {
+    height: 140vh;
+}
+
+section {
+    height: 100vh;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+.landing {
+    height: 100vh;
+    width:fit-margin;
+    background-color: rgb(0, 0, 0);
+    background-position: right;
+    background-size:contain;
+    background-image: url('images/Wallpaper.jpeg');
+    background-repeat: no-repeat;
+
+}
+
+.navbar {
+    /* border: 2px dashed white; */
+    height: 56px;
+}
+
+.nav-button {
+    border: none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right:20px;
+    padding-left:20px;
+    cursor: pointer;
+    float: left;
+    font-size: 0.9rem;
+    background-color: black;
+    color: white;
+    transition:all ease-in-out 200ms;
+}
+
+.nav-button:hover, .nav-button:focus {
+    background-color: rgb(220, 210, 114);
+    color:rgb(12, 31, 55);
+}
+
+
+
+#logo {
+    color: white;
+    text-align: left;
+    font-family: Syncopate, Arial, Helvetica;
+    font-size: 2rem;
+    padding: 30px 30px 30px 20px;
+    /* border: 2px solid white; */
+}
+.head-container {
+    width: 80vh;
+    height: 70vh;
+    padding: 20px;
+    /* border: 2px dashed white; */
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+}   
+.connect {
+    /* border: 2px dashed white; */
+    position: relative;
+}
+
+.connect-description {
+    /* border: 2px dashed white; */
+    position: relative;
+    top: 10px;
+}
+
+
+#drake-box {
+    /* display: inline-block; */
+    width: 37.5%;
+    height:fit-content;
+    border: 2px white dashed;
+    margin-right: 10px;
+    position:relative;
+    top: 2.5vh;
+    left: 2.5vh;
+}
+
+.left {
+     float: left;
+     margin-right: 1rem;
+     /* border: 2px dashed white; */
+     display: block;
+}
+
+h2 {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    
+}
+
+
+.greyish-text{
+    color: rgba(128,128,128,0.5);
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+}
+
+.scroller {
+    position: absolute;
+    display: flex;
+    color: rgb(87, 95, 255);
+    top: 90vh;
+    left: 75vh;
+    background-color: rgba(210, 198, 198, 0.063);
+    width:50px;
+    height: 50px;
+    padding-top: 7px;
+    font-size: 30px;
+    border: double 2px cyan;
+    border-radius: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+    transition:all ease-in-out 200ms;
+
+}
+
+.scroller:hover {
+    background-color: rgb(87, 95, 255);
+    color:rgb(0, 0, 0);
+    
+}
+
+#two {
+    position:relative;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.card {
+    background-color: rgb(23, 17, 49);
+    margin: 10px;
+    margin-top: 50px;
+    font-size: 2em;
+    /* padding-bottom: 5vh; */
+    /* very important (marking for me) */
+    inline-size: min-content;
+    text-align: center;
+    border: solid white 2px;
+    transition:all ease-in-out 200ms;
+    border-radius: 20px;
+    
+}
+
+.card:hover {
+
+    background-color: rgba(194, 189, 220,0.5);
+    cursor: pointer;
+
+}
+
+
+
+
+.card-image {
+    width: 350px;
+    overflow: hidden;
+    border: solid white 1px;
+    display: block;
+    border-radius: 20px;
+}
+.card-text {
+    color: rgba(232, 232, 232, 0.988);
+    padding-right: 5px;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 50px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+    
+}
+
+#three {
+    height: 100vh;
+}
+
+.scroller-up-mid {
+    position: absolute;
+    display: flex;
+    color: rgb(87, 95, 255);
+    top: 50vh;
+    left: 10vh;
+    background-color: rgba(210, 198, 198, 0.063);
+    width:50px;
+    height: 50px;
+    padding-top: 5.5px;
+    font-size: 30px;
+    border: double 2px cyan;
+    border-radius: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+    transition:all ease-in-out 200ms;
+}
+
+.scroller-down-mid {
+    position: absolute;
+    display: flex;
+    top: 50vh;
+    right: 10vh;
+    color: rgb(87, 95, 255);
+    background-color: rgba(210, 198, 198, 0.063);
+    width:50px;
+    height: 50px;
+    padding-top: 7px;
+    font-size: 30px;
+    border: double 2px cyan;
+    border-radius: 25px;
+    /* text-align: center; */
+    justify-content: center;
+    align-content: center;
+    transition:all ease-in-out 200ms;
+}
+
+/* What selector to combine these two buttons here? */
+
+.scroller-up-mid:hover {
+    background-color: rgb(87, 95, 255);
+    color:rgb(0, 0, 0);
+}
+
+.scroller-down-mid:hover {
+    background-color: rgb(87, 95, 255);
+    color:rgb(0, 0, 0);
+}
+
+.footer-element {
+    width:100%;
+    background-color: rgb(23, 17, 49);
+    height:90vh;
+    position: relative;
+    top:10vh;
+    
+    
+}
+h3 {
+    font-family: roboto;
+    font-size: 3em;
+    padding: 20px 0px 0px 30px;
+}
+
+.link-list {
+    display: flex;
+    margin-right: 3px;
+
+}
+
+.link-rows {
+    padding:8vh 12vh 0vh 4vh;
+    line-height: 50px;
+    font-size: large;
+}
+
+.join-button {
+    position: relative;
+    left:30%;
+    top: 10vh;
+    width:150px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 30px;
+    border: white 2px solid;
+    color: aliceblue;
+    background-color: rgb(23, 17, 49);
+
+}
+
+.join-button:hover {
+    background-color:aliceblue;
+    color: rgb(23, 17, 49);
+    transition:all ease-in-out 200ms;
+    cursor: pointer;
+}
+
+.line {
+    position:relative;
+    top:25vh;
+}
+
+.last-links {
+    color:rgb(223, 223, 223);
+    text-decoration: none;
+}
+.last-links:hover {
+    text-decoration: underline;
+}
